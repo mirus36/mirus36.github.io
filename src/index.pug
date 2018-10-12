@@ -1,0 +1,60 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        title Михаил Якунин
+        link(rel="stylesheet", href="style.css")
+        link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.3.1/css/all.css", integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU", crossorigin="anonymous")
+    body
+        script(src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9") 
+        header
+        main
+            section(id="action_1", class="action")
+                div(class="comand-line")
+                    div(class="username")
+                        | mikhail@yakunin.me:~/    
+                    div(id="type_begin_1", class="action")            
+                        p echo $greeting
+                    div(id="type_end_1")
+                div(id="result_1", class="result", style="display: none")
+                    p
+                        | Привет. Меня зовут Михаил Якунин, я Java разработчик готовый работать удаленно.
+                        br
+                        | Мой опыт работы с 2015 года. Знаком с основным стеком разработки на Java.
+                        br
+                        | Могу работать с фронтендом, но сейчас активно интересуюсь разработкой распределнных систем и хочу попробовать себя в этом.
+                        br
+                        | Если я могу быть Вам полезен, свяжитесь со мной.
+                    
+            section(id="action_2", class="action", style="display: none")
+                div(class="comand-line")
+                    div(class="username")
+                        | mikhail@yakunin.me:~/
+                    div(id="type_begin_2" class="action")              
+                        p ./contacts
+                    div(id="type_end_2")
+                div(id="result_2", class="result", style="display: none")
+                    p Мои контакты
+                    div(class="contacts")
+                        a(href="mailto:mikhail.rus36@gmail.com")
+                            i(class="far fa-envelope fa-lg")
+                        a(href="https://github.com/mirus36",  target="_blank")
+                            i(class="fab fa-github fa-lg")
+                        a(href="https://www.linkedin.com/in/mikhail-yakunin-4b3b71168",  target="_blank")
+                            i(class="fab fa-linkedin-in fa-lg")
+                        a(href="https://www.facebook.com/100013309775653",  target="_blank")
+                            i(class="fab fa-facebook fa-lg",  target="_blank")
+                        a(href="https://vk.com/id37269369",  target="_blank")
+                            i(class="fab fa-vk fa-lg")
+                        p
+            section(id="action_3", class="action", style="display: none")
+                div(class="comand-line")
+                    div(class="username")
+                        | mikhail@yakunin.me:~/
+                    div(id="type_begin_3" class="action")
+                        p
+                    div(id="type_end_3")
+                div(id="result_3", class="result", style="display: none")
+                            
+        script(src="app.js")
+        
