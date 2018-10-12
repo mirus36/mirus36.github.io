@@ -17,7 +17,7 @@ const path = {
     pug: 'src/index.pug',
     es6: 'src/app.js',
     sass: 'src/style.sass',
-    build: 'build'
+    build: 'docs'
 };
 
 gulp.task('copy-favicon', () => {
@@ -63,9 +63,7 @@ gulp.task('watch', () => {
     gulp.watch(path.pug, runSequence('build-html', 'devserver-reload'))
 });
 
-
-
-gulp.task('dev', () => runSequence('build', ['watch', 'devserver']))
+gulp.task('default', () => runSequence('build', ['watch', 'devserver']))
 
 
 
